@@ -1,28 +1,37 @@
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     div.nav-bar {
-        padding: 1rem 3rem;
-        width: 100%;
-        background: #304353;
+        padding: 1rem 1rem;
+        position: relative;
+        display: inline-block;
+        margin-bottom: -5px;
     }
     div.logo {
-        font-size: 2rem;
-        color: #bcc3c7;
-        margin-left: -7vw;
+        float: left;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    nav {
+        float: right;
+        display: none;
+        border-top: 1px #E44C65 solid;
+        padding-top: 20px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    nav.show {
+        display: block;
     }
     ul.nav-links {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        margin-left: 13vw;
-        margin-top: 1vh;
+        flex-direction: column;
     }
     ul li {
-        margin: 0 1vw;
-        list-style: none;
-        font-size: 1rem;
+        display: inline-block;
+        padding: 15px 25px;
+        width: 100%;
     }
     ul li a {
-        padding: 0.3vw;
+        display: inline-block;
     }
     div.hero-section {
         padding: 5rem;
